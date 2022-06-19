@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:background="@drawable/background2">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/icon"
+            android:contentDescription="TODO" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="@drawable/footer_bg">
+
+
+        <com.example.jean.jcplayer.view.JcPlayerView
+            android:id="@+id/jcplayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="60dp"
+            app:next_icon_color="@android:color/white"
+            app:pause_icon_color="#f4f4f4"
+            app:play_icon_color="#f4f4f4"
+            app:previous_icon_color="#f4f4f4"
+            app:progress_color="#f4f4f4"
+            app:random_icon_color="#f4f4f4"
+            app:repeat_icon_color="#f4f4f4"
+            app:repeat_one_icon_color="#f4f4f4"
+            app:seek_bar_color="#f4f4f4"
+            app:text_audio_current_duration_color="#f4f4f4"
+            app:text_audio_duration_color="#f4f4f4"
+            app:text_audio_title_color="#f4f4f4" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
